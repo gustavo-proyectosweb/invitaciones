@@ -234,3 +234,34 @@
   box-shadow: var(--shadow-sm);
   font-size: var(--font-size-xs);
 }
+
+/* --- SECCIÓN 3: ASISTENCIA (RSVP) --- */
+.rsvp-section {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-5);
+  background-color: var(--color-bg);
+}
+
+/* Descripción / Mensaje emotivo de asistencia */
+.rsvp-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-main);
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto var(--space-4);
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Contenedor del botón de confirmación */
+.rsvp-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Modificador opcional por si queremos destacar el botón RSVP manteniendo el mismo componente base */
+#rsvp-btn {
+  /* Reutiliza .btn directamente */
+  box-shadow: var(--shadow-md);
+}
