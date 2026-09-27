@@ -1,0 +1,26 @@
+# Archivos de sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Configuración de editores e IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node / Herramientas de desarrollo (por si agregas linters/minificadores más adelante)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fotos/Assets pesados o temporales de prueba
+assets/images/raw/
+assets/images/test/
+*.psd
+*.raw
