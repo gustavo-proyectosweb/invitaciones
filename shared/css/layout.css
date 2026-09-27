@@ -1,0 +1,76 @@
+/* shared/css/layout.css */
+
+/* Contenedor Principal (Simulador de pantalla móvil en Desktop) */
+#app {
+  width: 100%;
+  max-width: 480px; /* Ancho estándar de un smartphone grande */
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08); /* Sombra elegante para destacar en desktop */
+  position: relative;
+  overflow-x: hidden; /* Evita desbordamientos horizontales de animaciones/placeholders */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Patrón de Espaciado Vertical para Secciones */
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Secciones generales con padding simétrico */
+.hero-section,
+.location-section,
+.rsvp-section,
+.countdown-section,
+.closing-section {
+  width: 100%;
+  padding: var(--space-5) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Banners / Secciones de Fotos Full Width dentro del contenedor */
+.photo-banner-section {
+  width: 100%;
+  padding: 0;
+  position: relative;
+}
+
+.photo-banner {
+  width: 100%;
+  margin: 0;
+}
+
+.photo-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Footer de créditos al final del contenedor */
+.footer-section {
+  width: 100%;
+  padding: var(--space-4);
+  margin-top: auto; /* Empuja el footer al final si el contenido es corto */
+  text-align: center;
+}
+
+/* Placeholders de Decoración (Alineamiento centrado inicial) */
+.decor-top-placeholder,
+.decor-divider-placeholder {
+  width: 100%;
+  text-align: center;
+  padding: var(--space-2) 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+  opacity: 0.6;
+  font-style: italic;
+}
