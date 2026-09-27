@@ -16,3 +16,14 @@ invitaciones/
 │   └── js/                # Scripts del motor base (fetcher, validators, utils)
 └── templates/             # Diseños de invitaciones (layouts / vistas)
     └── infantil-01/       # Plantilla base (estilo invitación Mía)
+
+    ---
+
+## 🚀 Cómo Ejecutar en Desarrollo
+
+Dado que el proyecto utiliza `fetch()` para cargar datos dinámicos desde archivos JSON, es necesario ejecutarlo a través de un servidor HTTP local.
+
+### VS Code (Live Server)
+1. Abrir la carpeta del proyecto en Visual Studio Code.
+2. Hacer clic derecho sobre `templates/infantil-01/index.html`.
+3. Seleccionar **Open with Live Server**.
