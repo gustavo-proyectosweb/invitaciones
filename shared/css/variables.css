@@ -1,0 +1,53 @@
+/* shared/css/variables.css */
+
+/* Importación de tipografías desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* --- PALETA DE COLORES --- */
+  /* Colores de marca / tema base (Mía) */
+  --color-primary: #B27B88;       /* Rosa viejo / Dusty Rose */
+  --color-primary-dark: #8E5A67;  /* Rosa oscuro para hovers / acentos */
+  --color-primary-light: #E8D5D8; /* Rosa suave para tarjetas / fondos */
+  --color-bg: #FDFBF7;             /* Blanco cálido / marfil de fondo */
+  --color-card-bg: #FFFFFF;        /* Blanco puro para tarjetas */
+  --color-text-main: #4A3E3D;      /* Marrón / Gris topo oscuro para texto principal */
+  --color-text-muted: #827270;     /* Texto secundario */
+  --color-accent: #9A5A68;         /* Color de contraste para botones */
+  
+  /* --- TIPOGRAFÍAS --- */
+  --font-title: 'Great Vibes', cursive;
+  --font-body: 'Montserrat', sans-serif;
+
+  /* Escala tipográfica */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.5rem;    /* 24px */
+  --font-size-2xl: 2rem;     /* 32px */
+  --font-size-3xl: 2.75rem;  /* 44px */
+
+  /* --- ESPACIADOS --- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 1rem;     /* 16px */
+  --space-4: 1.5rem;   /* 24px */
+  --space-5: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+
+  /* --- RADIOS DE BORDE & BORDES --- */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* --- SOMBRAS --- */
+  --shadow-sm: 0 2px 8px rgba(178, 123, 136, 0.08);
+  --shadow-md: 0 4px 16px rgba(178, 123, 136, 0.12);
+  --shadow-lg: 0 8px 24px rgba(178, 123, 136, 0.16);
+
+  /* --- TRANSICIONES --- */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
