@@ -111,116 +111,66 @@
   }
 }
 
-/* --- SECCIÓN CUÁNDO Y DÓNDE --- */
-.location-section {
-  padding-top: var(--space-4);
-  padding-bottom: var(--space-5);
+/* --- AJUSTES DE FINURA: SECCIÓN PORTADA (HERO) --- */
+.hero-section {
+  padding-top: var(--space-5);
+  padding-bottom: var(--space-4);
 }
 
-/* Títulos de Sección */
-.section-title {
-  font-family: var(--font-title);
-  font-size: var(--font-size-2xl);
-  color: var(--color-primary-dark);
-  font-weight: 400;
-  margin-bottom: var(--space-4);
+.hero-badge {
+  font-size: var(--font-size-3xl);
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-2);
 }
 
-/* Tarjeta Principal */
-.location-card {
-  width: 100%;
-  background-color: var(--color-card-bg);
-  border-radius: var(--radius-lg);
-  padding: var(--space-5) var(--space-4);
-  box-shadow: var(--shadow-md);
+.hero-avatar-container {
+  width: 180px;
+  height: 180px;
+  margin-bottom: var(--space-3);
+  padding: 6px;
+  background: var(--color-card-bg);
+  border: 1px dashed var(--color-primary);
+  box-shadow: 0 6px 20px rgba(178, 123, 136, 0.15);
+}
+
+.hero-avatar-container img {
   border: 1px solid var(--color-primary-light);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-4);
 }
 
-/* Filas de Información (Ícono + Texto) */
-.location-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-3);
-  text-align: center;
+.hero-title {
+  font-size: 3.5rem; /* Un poco más prominente para el nombre principal */
+  margin-bottom: 0;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xs);
+  letter-spacing: 2.5px;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* --- AJUSTES DE FINURA: SECCIÓN CUÁNDO Y DÓNDE --- */
+.location-card {
+  padding: var(--space-5) var(--space-4);
+  border-color: rgba(178, 123, 136, 0.2);
+  position: relative;
+}
+
+/* Separadores sutiles entre fecha, hora y lugar */
+.location-item:not(:last-child) {
+  padding-bottom: var(--space-3);
+  border-bottom: 1px dashed rgba(178, 123, 136, 0.15);
 }
 
 .location-item .icon {
-  font-size: var(--font-size-lg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  background-color: var(--color-bg);
-  border-radius: var(--radius-full);
-  flex-shrink: 0;
-}
-
-.location-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.location-info time,
-.location-info p {
-  font-size: var(--font-size-sm);
-  color: var(--color-text-main);
-  font-weight: 500;
-  line-height: 1.4;
-}
-
-#location-venue {
-  font-weight: 700;
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  opacity: 0.9;
 }
 
-#location-address {
-  font-size: var(--font-size-xs);
-  color: var(--color-text-muted);
-}
-
-/* Estilos de Botones Globales / Reutilizables en la Plantilla */
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  min-height: 48px; /* Target táctil recomendado para mobile (> 44px) */
-  padding: var(--space-2) var(--space-5);
-  background-color: var(--color-primary);
-  color: #FFFFFF;
-  font-family: var(--font-body);
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  border-radius: var(--radius-full);
-  box-shadow: var(--shadow-sm);
-  transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
-  width: 100%;
-  max-width: 240px;
-  margin: 0 auto;
-}
-
-.btn:hover {
-  background-color: var(--color-primary-dark);
-  box-shadow: var(--shadow-md);
-}
-
-.btn:active {
-  transform: scale(0.97);
-}
-
-/* Contenedor del botón en la tarjeta */
-.location-action {
-  margin-top: var(--space-2);
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  text-transform: uppercase;
+  font-size: var(--font-size-xs);
+  letter-spacing: 1px;
 }
