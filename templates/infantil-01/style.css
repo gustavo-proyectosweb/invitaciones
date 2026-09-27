@@ -394,3 +394,19 @@
   text-decoration: underline;
   font-weight: 500;
 }
+
+/* --- AJUSTE FINO GLOBAL DE CIERRE VISUAL --- */
+#app {
+  /* Transición suave para evitar parpadeos visuales en móviles al scrollear */
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Sombras más suaves y coherentes en todas las cards y botones */
+.location-card,
+.countdown-box {
+  border-color: rgba(178, 123, 136, 0.18);
+}
+
+.btn {
+  box-shadow: 0 4px 12px rgba(178, 123, 136, 0.25);
+}
