@@ -15,7 +15,7 @@ export function renderEventData(data) {
     document.title = data.meta.title;
   }
 
-  // 2. Seccion Hero / Portada
+  // 2. Sección Hero / Portada
   setElementText('#hero-badge', data.hero?.badge);
   setElementText('#hero-name', data.hero?.name);
   setElementText('#hero-subtitle', data.hero?.subtitle);
@@ -30,11 +30,6 @@ export function renderEventData(data) {
   setElementText('#location-time', data.location?.timeText);
   setElementText('#location-venue', data.location?.venue);
   setElementText('#location-address', data.location?.address);
-  
-  if (data.location?.googleMapsUrl) {
-    const mapBtn = document.querySelector('#location-map-link');
-    if (mapBtn) mapBtn.href = data.location.googleMapsUrl;
-  }
 
   // 5. Sección Asistencia (RSVP)
   setElementText('#rsvp-title', data.rsvp?.sectionTitle);
@@ -48,6 +43,9 @@ export function renderEventData(data) {
   setElementText('#closing-text', data.closing?.message);
   setElementText('#closing-signature', data.closing?.signature);
   setElementText('#footer-credit', data.footer?.creditText);
+
+  // 8. Enlaces de Acción (WhatsApp, Maps, etc.)
+  renderActions(data);
 }
 
 /**
@@ -91,4 +89,28 @@ function setElementImage(selector, src, altText) {
     img.onerror = null; // Previene bucles infinitos
     img.src = DEFAULT_PLACEHOLDER;
   };
+}
+
+/**
+ * Vincula los enlaces de acción interactivas (Google Maps, WhatsApp, etc.)
+ * @param {Object} data 
+ */
+export function renderActions(data) {
+  // 1. Enlace a Google Maps
+  if (data.location?.googleMapsUrl) {
+    const mapBtn = document.querySelector('#location-map-link');
+    if (mapBtn) {
+      mapBtn.href = data.location.googleMapsUrl;
+    }
+  }
+
+  // 2. Enlace de Confirmación por WhatsApp
+  if (data.rsvp?.whatsappNumber) {
+    const rsvpBtn = document.querySelector('#rsvp-btn');
+    if (rsvpBtn) {
+      const phone = data.rsvp.whatsappNumber.replace(/[^0-9]/g, ''); // Limpieza de caracteres no numéricos
+      const message = encodeURIComponent(data.rsvp.whatsappPresetMessage || '¡Hola! Confirmo mi asistencia.');
+      rsvpBtn.href = `https://wa.me/${phone}?text=${message}`;
+    }
+  }
 }
