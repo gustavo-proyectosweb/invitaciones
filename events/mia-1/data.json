@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "title": "¡Mi 1er añito! - Mía",
+    "description": "Invitación digital al primer añito de Mía"
+  },
+  "theme": {
+    "primaryColor": "#B27B88",
+    "primaryDark": "#8E5A67",
+    "primaryLight": "#E8D5D8",
+    "backgroundColor": "#FDFBF7"
+  },
+  "hero": {
+    "badge": "¡Mi 1er añito!",
+    "name": "Mía",
+    "subtitle": "12.10.2026",
+    "avatarUrl": "../../assets/decor/mia-avatar-placeholder.jpg",
+    "audioUrl": "../../assets/audio/musica-fondo.mp3"
+  },
+  "photos": [
+    "../../assets/decor/mia-foto-1.jpg",
+    "../../assets/decor/mia-foto-2.jpg",
+    "../../assets/decor/mia-foto-3.jpg",
+    "../../assets/decor/mia-foto-4.jpg"
+  ],
+  "location": {
+    "sectionTitle": "¿Cuándo y Dónde?",
+    "dateText": "Sábado 12 de Octubre, 2026",
+    "timeText": "16:00 a 20:00 hs",
+    "venue": "Salón de Fiestas \"Mi Sueño\"",
+    "address": "Av. Siempre Viva 1234, Buenos Aires",
+    "googleMapsUrl": "https://maps.google.com/?q=Av.+Siempre+Viva+1234"
+  },
+  "rsvp": {
+    "sectionTitle": "Confirmación de Asistencia",
+    "descriptionText": "Esperamos contar con tu presencia para compartir este día tan especial. Por favor confirma antes del 1 de Octubre.",
+    "whatsappNumber": "5491112345678",
+    "whatsappPresetMessage": "¡Hola! Confirmo mi asistencia para el primer añito de Mía."
+  },
+  "countdown": {
+    "sectionTitle": "Falta Muy Poco",
+    "targetDateISO": "2026-10-12T16:00:00-03:00"
+  },
+  "closing": {
+    "title": "¡Te esperamos!",
+    "message": "Gracias por acompañarnos en este momento tan importante.",
+    "signature": "Mía"
+  },
+  "footer": {
+    "creditText": "Diseñado con ❤️ para Mía"
+  }
+}
