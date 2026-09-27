@@ -3,9 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plantilla Infantil 01</title>
+  <title>Invitación Digital</title>
 </head>
 <body>
-  <!-- Servidor levantado correctamente -->
+
+  <!-- Contenedor principal de la plantilla -->
+  <div id="app">
+
+    <!-- SECCIÓN: PORTADA (HERO) -->
+    <header class="hero-section">
+      <!-- Decoración superior (Placeholder) -->
+      <div class="decor-top-placeholder" aria-hidden="true">
+        <span>[Decoración Superior - Placeholder]</span>
+      </div>
+
+      <!-- Título de la celebración -->
+      <p class="hero-badge" id="hero-badge"></p>
+
+      <!-- Foto de portada circular -->
+      <figure class="hero-avatar-container">
+        <img id="hero-avatar" src="" alt="Foto de portada">
+      </figure>
+
+      <!-- Nombre del agasajado/a -->
+      <h1 class="hero-title" id="hero-name"></h1>
+
+      <!-- Subtítulo o detalle corto de portada -->
+      <p class="hero-subtitle" id="hero-subtitle"></p>
+
+      <!-- Control de Audio e Indicador Desliza -->
+      <div class="hero-controls">
+        <button type="button" id="audio-control-btn" aria-label="Reproducir música de fondo">
+          <span class="audio-icon" aria-hidden="true">🎵</span>
+          <span class="audio-status-text">Audio</span>
+        </button>
+        
+        <div class="scroll-indicator" aria-hidden="true">
+          <span>Desliza</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECCIÓN: CUÁNDO Y DÓNDE -->
+      <section class="location-section" aria-labelledby="location-title">
+        
+        <!-- Decoración intermedia (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+
+        <h2 id="location-title" class="section-title"></h2>
+
+        <article class="location-card">
+          <!-- Fecha -->
+          <div class="location-item">
+            <span class="icon" aria-hidden="true">📅</span>
+            <div class="location-info">
+              <time id="location-date" datetime=""></time>
+            </div>
+          </div>
+
+          <!-- Horario -->
+          <div class="location-item">
+            <span class="icon" aria-hidden="true">⏰</span>
+            <div class="location-info">
+              <time id="location-time" datetime=""></time>
+            </div>
+          </div>
+
+          <!-- Ubicación / Dirección -->
+          <address class="location-item location-address">
+            <span class="icon" aria-hidden="true">📍</span>
+            <div class="location-info">
+              <p id="location-venue"></p>
+              <p id="location-address"></p>
+            </div>
+          </address>
+
+          <!-- Botón a Google Maps -->
+          <div class="location-action">
+            <a id="location-map-link" href="#" target="_blank" rel="noopener noreferrer" class="btn">
+              Ubicación
+            </a>
+          </div>
+        </article>
+
+      </section>
+    </main>
+
+  </div>
+
 </body>
 </html>
