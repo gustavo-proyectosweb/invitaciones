@@ -10,7 +10,7 @@
   <!-- Contenedor principal de la plantilla -->
   <div id="app">
 
-    <!-- SECCIÓN: PORTADA (HERO) -->
+    <!-- SECCIÓN 1: PORTADA (HERO) -->
     <header class="hero-section">
       <!-- Decoración superior (Placeholder) -->
       <div class="decor-top-placeholder" aria-hidden="true">
@@ -44,11 +44,17 @@
       </div>
     </header>
 
+    <!-- FOTO INTERMEDIA 1 (Full screen) -->
+    <section class="photo-banner-section" aria-label="Foto destacada 1">
+      <figure class="photo-banner">
+        <img id="gallery-photo-1" src="" alt="Foto de Mía 1">
+      </figure>
+    </section>
+
     <main>
-      <!-- SECCIÓN: CUÁNDO Y DÓNDE -->
+      <!-- SECCIÓN 2: CUÁNDO Y DÓNDE -->
       <section class="location-section" aria-labelledby="location-title">
-        
-        <!-- Decoración intermedia (Placeholder) -->
+        <!-- Decoración separadora (Placeholder) -->
         <div class="decor-divider-placeholder" aria-hidden="true">
           <span>[Decoración Separador - Placeholder]</span>
         </div>
@@ -88,9 +94,112 @@
             </a>
           </div>
         </article>
+      </section>
 
+      <!-- FOTO INTERMEDIA 2 (Full screen) -->
+      <section class="photo-banner-section" aria-label="Foto destacada 2">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+        <figure class="photo-banner">
+          <img id="gallery-photo-2" src="" alt="Foto de Mía 2">
+        </figure>
+      </section>
+
+      <!-- SECCIÓN 3: ASISTENCIA (RSVP) -->
+      <section class="rsvp-section" aria-labelledby="rsvp-title">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+
+        <h2 id="rsvp-title" class="section-title"></h2>
+        <p id="rsvp-text" class="rsvp-description"></p>
+
+        <div class="rsvp-action">
+          <a id="rsvp-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn">
+            Confirmar asistencia
+          </a>
+        </div>
+      </section>
+
+      <!-- FOTO INTERMEDIA 3 (Full screen) -->
+      <section class="photo-banner-section" aria-label="Foto destacada 3">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+        <figure class="photo-banner">
+          <img id="gallery-photo-3" src="" alt="Foto de Mía 3">
+        </figure>
+      </section>
+
+      <!-- SECCIÓN 4: CONTADOR REGRESIVO (FALTA MUY POCO) -->
+      <section class="countdown-section" aria-labelledby="countdown-title">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+
+        <h2 id="countdown-title" class="section-title"></h2>
+
+        <!-- Bloques del contador -->
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <span id="countdown-days" class="number">00</span>
+            <span class="label">Días</span>
+          </div>
+          <div class="countdown-box">
+            <span id="countdown-hours" class="number">00</span>
+            <span class="label">Hs</span>
+          </div>
+          <div class="countdown-box">
+            <span id="countdown-minutes" class="number">00</span>
+            <span class="label">Min</span>
+          </div>
+          <div class="countdown-box">
+            <span id="countdown-seconds" class="number">00</span>
+            <span class="label">Seg</span>
+          </div>
+        </div>
+
+        <!-- Botón para agendar evento -->
+        <div class="calendar-action">
+          <button type="button" id="calendar-btn" class="btn">
+            <span class="icon" aria-hidden="true">📅</span> Agendar
+          </button>
+        </div>
+      </section>
+
+      <!-- FOTO INTERMEDIA 4 (Full screen) -->
+      <section class="photo-banner-section" aria-label="Foto destacada 4">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+        <figure class="photo-banner">
+          <img id="gallery-photo-4" src="" alt="Foto de Mía 4">
+        </figure>
+      </section>
+
+      <!-- SECCIÓN 5: CIERRE (TE ESPERAMOS) -->
+      <section class="closing-section" aria-labelledby="closing-title">
+        <!-- Decoración separadora (Placeholder) -->
+        <div class="decor-divider-placeholder" aria-hidden="true">
+          <span>[Decoración Separador - Placeholder]</span>
+        </div>
+
+        <h2 id="closing-title" class="closing-title"></h2>
+        <p id="closing-text" class="closing-message"></p>
+        <p id="closing-signature" class="closing-signature"></p>
       </section>
     </main>
+
+    <!-- FOOTER: CRÉDITOS -->
+    <footer class="footer-section">
+      <p id="footer-credit"></p>
+    </footer>
 
   </div>
 
